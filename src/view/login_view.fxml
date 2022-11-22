@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.LoginViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <VBox alignment="CENTER" layoutX="52.0" layoutY="31.0" prefHeight="204.0" prefWidth="297.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="122.0" prefWidth="223.0" VBox.vgrow="NEVER">
+          <children>
+            <Label text="username" textAlignment="LEFT">
+              <HBox.margin>
+                <Insets right="10.0" />
+              </HBox.margin>
+            </Label>
+            <TextField id="userinput" fx:id="input_username" prefWidth="200.0" promptText="Enter your username" />
+          </children>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </HBox>
+        <Button id="btn_login" mnemonicParsing="false" onMouseClicked="#handleBtnLoginClickEvent" text="Login" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
